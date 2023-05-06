@@ -1,0 +1,10 @@
+version: '3.6'
+services:
+    java:
+        build: .
+        ports: 
+            - 8080:8080
+        tty: true
+        volumes:
+            - ./src:/home/tobiuo/src
+            - ./out:/home/tobiuo/out
